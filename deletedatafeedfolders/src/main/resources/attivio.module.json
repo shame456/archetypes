@@ -1,0 +1,17 @@
+{
+  "name":"deletedatafeedfolders",
+  "moduleVersion":"${version}",
+  "description":"A description of my module",
+  "initClassName":"com.attivio.emodules.deletedatafeedfolders.ModuleInit",
+  "connectors": {
+      "simpleSampleScanner":"com.attivio.emodules.deletedatafeedfolders.SampleDataSourceScanner",
+      "incrementalSampleScanner":"com.attivio.emodules.deletedatafeedfolders.SampleIncrementalDataSourceScanner",
+      "principalSampleScanner":"com.attivio.emodules.deletedatafeedfolders.SamplePrincipalScanner"
+  },
+  "components": [
+    "com.attivio.emodules.deletedatafeedfolders.SampleFieldValueCreatingTransformer"
+  ],
+  "newFiles": {
+    "lib/deletedatafeedfolders.jar":"lib/deletedatafeedfolders-${project.version}.jar"
+  }
+}

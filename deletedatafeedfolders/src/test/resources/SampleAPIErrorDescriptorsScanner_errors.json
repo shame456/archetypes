@@ -1,0 +1,29 @@
+{
+  "errorMap" : {
+    "java.net.UnknownHostException" : {
+      "errorId" : "java.net.UnknownHostException",
+      "fatal" : true,
+      "numRetries" : 0,
+      "errorProperties" : {
+        "use_stacktrace" : "true"
+      },
+      "errorMessage" : "Unknown host in the configured url [%s] for scanner %s"
+    },
+    "org.apache.http.client.ClientProtocolException" : {
+      "errorId" : "org.apache.http.client.ClientProtocolException",
+      "fatal" : false,
+      "numRetries" : 0,
+      "logLevel" : "ERROR",
+      "systemEventSevirity" : "SYS_WARN",
+      "errorProperties" : {
+        "some_key1" : "some_value1",
+        "some_key2" : "some_key2"
+      },
+      "errorMessage" : "bad protocol in the configured url [%s] for scanner %s",
+      "percentTimeoutIncreaseOnRetry" : 200
+    }
+  },
+  "defaultLogLevel" : "ERROR",
+  "defaultNumRetries" : 0,
+  "defaultPercentTimeoutIncreaseOnRetry" : 100
+}
